@@ -1,4 +1,4 @@
-const Flight = require('../models/flight');
+const { Schema } = require("mongoose");
 
 module.exports = {
     new: newFlight,
