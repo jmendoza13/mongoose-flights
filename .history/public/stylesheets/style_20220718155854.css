@@ -3,20 +3,13 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   display: grid;
   justify-content: center;
-  background-color: rgb(210, 206, 252);
   grid-template-areas: 
     "nav"
     "main"
+  
 }
 
-nav, h1, p {
-  display: flex;
-  color: #010101;
+a,h1 {
+  color: #00B7FF;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-a {
-  padding: 5px;
 }

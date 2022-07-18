@@ -13,11 +13,11 @@ function index(req, res) {
   }
 
   function create(req, res) {
-    console.log(req.body)
+      if (req.body.airport) req.body.airport = req.body.airport.split(',');
       for (let key in req.body) {
           if (req.body[key] === '') delete req.body[key];
       }
-      var flight = new Flight(req.body);
+      var flight = new flight(req.body);
       flight.save(function(err) {
           // one way to handle errors
           if (err) return res.redirect('/flights/new');
@@ -32,3 +32,14 @@ function index(req, res) {
 function newFlight(req, res) {
     res.render('flights/new');
 }
+
+// function create(req, res) {
+//     req.body.airline = !!req.body.airline
+//     req.body.airport = !req.body.airport.trim();
+//     if(req.body.airport) req.body.airport = req.body.airport.split(/\s*,\s*/g, ',');
+//     const flight = new Flight(req.body);
+//     flight.save(function(err) {
+//         if (err) return res.redirect('/flights/new');
+//         console.log(flight);
+//         res.redirect('/flighs/new');
+//     });
