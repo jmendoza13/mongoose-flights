@@ -4,6 +4,7 @@ body {
   font-weight: 100;
   justify-content: center;
   background: linear-gradient(45deg, #49a09d, #5f2c82);
+  background-repeat: contain;
   text-align: center;
   margin: 5px;
   grid-template-areas: 
@@ -13,33 +14,13 @@ body {
 
 nav, h1, p {
   display: flex;
-  color: #ffffff;
+  color: #010101;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-table {
-	width: 800px;
-	border-collapse: collapse;
-	overflow: hidden;
-	box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
 
-th, td {
-	padding: 15px;
-	background-color: rgba(255,255,255,0.2);
-	color: #fff;
-}
-
-th {
-	text-align: center;
-}
-
-
-nav{
-  font: white;
-}
 a {
   padding: 5px;
 }

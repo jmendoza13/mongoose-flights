@@ -64,15 +64,10 @@
       <% } else { %> 
         <% } %>
         <button><a href="/flights/<%= flight._id %>/tickets/new">Buy a Ticket</a></button>
+      <thead>
+        <th>Seat</th>
+        <th>Price</th>
       </thead>
-      <% tickets.forEach(function(t) { %>
-      <tr>
-        <td><%= t.seat %></td>
-        <td><%= t.price %></td>
-      </tr>
-      <% }); %>
-  </tbody>
-  </table>
 
         <%- include('../partials/footer') %>
         

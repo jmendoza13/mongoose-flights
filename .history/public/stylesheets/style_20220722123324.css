@@ -4,6 +4,7 @@ body {
   font-weight: 100;
   justify-content: center;
   background: linear-gradient(45deg, #49a09d, #5f2c82);
+  background-repeat: contain;
   text-align: center;
   margin: 5px;
   grid-template-areas: 

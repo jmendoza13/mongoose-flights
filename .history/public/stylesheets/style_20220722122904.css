@@ -4,6 +4,7 @@ body {
   font-weight: 100;
   justify-content: center;
   background: linear-gradient(45deg, #49a09d, #5f2c82);
+  background-repeat: contain;
   text-align: center;
   margin: 5px;
   grid-template-areas: 
@@ -13,10 +14,17 @@ body {
 
 nav, h1, p {
   display: flex;
-  color: #ffffff;
+  color: #010101;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 table {
@@ -26,20 +34,19 @@ table {
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-th, td {
+th,
+td {
 	padding: 15px;
 	background-color: rgba(255,255,255,0.2);
 	color: #fff;
 }
 
 th {
-	text-align: center;
+	text-align: left;
 }
 
 
-nav{
-  font: white;
-}
+
 a {
   padding: 5px;
 }
