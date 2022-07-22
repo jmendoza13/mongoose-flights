@@ -1,6 +1,16 @@
 <%- include('../partials/header') %>
+<section id="show-page">
+           <h2>Airline</h2>
+           <p><%=flight.airline %></p>
+           <h2>Airport</h2>
+           <p><%=flight.airport %></p>
+           <h2>Flight #</h2>
+           <p><%=flight.flightNo %></p>
+           <h2>Departs</h2>
+           <p><%=flight.departs %></p>
 
-<h2>Enter a New Flight</h2>
+</section>
+<br><br><h2>Destination</h2>
 <form action="/flights" method="POST">
     <label>Airline:
         <select name="airline">
@@ -27,5 +37,11 @@
     </label><br>
     <input type="submit" value="Add Flight">
 </form>
+<br><br><label>Arrival:
+    <input type="datetime-local" value="departsDate" name="departs">
+</label><br>
+
+
 
 <%- include('../partials/footer') %>
+

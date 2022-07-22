@@ -1,0 +1,23 @@
+<%- include('../partials/header') %>
+<section id="show-page">
+           <h2>Airline</h2>
+           <p><%=flight.airline %></p>
+           <h2>Airport</h2>
+           <p><%=flight.airport %></p>
+           <h2>Flight #</h2>
+           <p><%=flight.flightNo %></p>
+           <h2>Departs</h2>
+           <p><%=flight.departs %></p>
+
+</section>
+<br><h2>Destinations</h2>
+<form id="add-destination" method="POST"
+ACTION="/flights/<%=flight._id %>/destinations">
+<select name ></select>
+</form>
+
+
+
+
+<%- include('../partials/footer') %>
+
